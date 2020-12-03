@@ -1,27 +1,22 @@
 import React from "react";
-import audace from "../../assets/images/audace.png";
+import mission from "../../assets/images/mission.png";
 import styled from "styled-components";
+
 
 
 const Mission = () => {
 
     const MissionWrapper = styled.section `
-              width: 100%;
-             max-width: 1280px;
-             margin: 0 auto;
    
-             .section-container{
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                grid-column-gap: 40px;
-                width: 100%;
+      
+              width: 100%;
+              max-width: 1280px;
+              margin: 0 auto;
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              grid-column-gap: 40px;
+              margin-top: 200px;
               
-                .about-image-container{
-                  img {
-                    width: 100%;
-                    max-width: 600px;
-                  }
-                }
                 .text-about-container{
                     display: flex;
                     flex-direction: column;
@@ -30,7 +25,7 @@ const Mission = () => {
                       position: relative;
                           .title-frame {
                             position: absolute;
-                            border: 7px solid #d4d5df;
+                            border: 4px solid #d4d5df;
                             width: 400px;
                             height: 60px;
                             right: 16%;
@@ -39,12 +34,13 @@ const Mission = () => {
                           }
                       h2{
                         font-size: 5em;
-                        
+                        font-weight: 100;
                         color: ${props => props.theme.orange};
                       }
                     }
                     .inner-text{
-                      width: 350px;
+                      max-width: 498px;
+                      width: 100%;
                       p{
                         font-size: 1.1em;
                         text-align: left;
@@ -65,6 +61,12 @@ const Mission = () => {
                       
                     }
                 }
+                .about-image-container{
+                  img {
+                    width: 100%;
+                    max-width: 600px;
+                  }
+                }
              }
 
 `
@@ -74,26 +76,21 @@ const Mission = () => {
             <div className="text-about-container">
                 <div className="title-container">
                     <div className="title-frame"></div>
-                    <h2>Soyez audacieux</h2>
+                    <h2>Notre mission</h2>
 
                 </div>
                 <div className="inner-text">
-                    <p>Le marché de l’emploi est plus que jamais lieu de concurrence, faire la différence est donc
-                        primordiale pour décrocher le plus rapidement possible un emploi à hauteur de vos ambitions.
-                        <br/>
-                        <br/>
-                        Chez Be Bold, nous souhaitons contribuer au développement de votre carrière et vous donner
-                        les moyens d’atteindre vos objectifs professionnels !
+                    <p>Notre mission est de mettre toute notre expertise à votre service afin de mettre toutes les chances de votre coté pour trouver un emploi qui vous correspond !
                     </p>
                 </div>
                 <div className="call-to-action">
                     <button className="learn-more">
-                        En savoir plus sur vous
+                        Découvrir notre méthode
                     </button>
                 </div>
             </div>
             <div className="about-image-container">
-                <img src={audace} alt="soyez audacieux"/>
+                <img src={mission} alt="soyez audacieux"/>
             </div>
 
         </MissionWrapper>

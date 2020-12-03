@@ -28,7 +28,7 @@ const About = () => {
                       position: relative;
                           .title-frame {
                             position: absolute;
-                            border: 7px solid #d4d5df;
+                            border: 4px solid #d4d5df;
                             width: 400px;
                             height: 60px;
                             right: 16%;
@@ -37,6 +37,7 @@ const About = () => {
                           }
                       h2{
                         font-size: 5em;
+                        font-weight: 100;
                         
                         color: ${props => props.theme.orange};
                       }

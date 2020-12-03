@@ -4,6 +4,7 @@ import './App.css';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import {ThemeProvider} from "styled-components";
 import GlobalFonts from './components/font';
+import Accompagnement from "./pages/Accompagnement";
 
 function App() {
     const theme = {
@@ -18,7 +19,8 @@ function App() {
         <Router>
             <Switch>
                 <ThemeProvider theme={theme}>
-                <Route to={"/"} component={Home}/>
+                <Route exact path={"/"} component={Home}/>
+                <Route exact path={"/accompagnement"} component={Accompagnement}/>
                 <GlobalFonts/>
                 </ThemeProvider>
             </Switch>
